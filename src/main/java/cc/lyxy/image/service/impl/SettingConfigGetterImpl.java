@@ -1,0 +1,25 @@
+package cc.lyxy.image.service.impl;
+
+import cc.lyxy.image.service.SettingConfigGetter;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
+import reactor.core.publisher.Mono;
+import run.halo.app.plugin.ReactiveSettingFetcher;
+
+@Component
+@RequiredArgsConstructor
+public class SettingConfigGetterImpl implements SettingConfigGetter {
+    private final ReactiveSettingFetcher settingFetcher;
+
+    @Override
+    public Mono<BasicConfig> getBasicConfig() {
+       return settingFetcher.fetch(BasicConfig.GROUP, BasicConfig.class)
+           .defaultIfEmpty(new BasicConfig());
+    }
+
+    @Override
+    public Mono<AIConfig> getAIConfig() {
+        return settingFetcher.fetch(AIConfig.GROUP, AIConfig.class)
+            .defaultIfEmpty(new AIConfig());
+    }
+}

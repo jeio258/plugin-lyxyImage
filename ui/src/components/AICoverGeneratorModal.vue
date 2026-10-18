@@ -48,7 +48,7 @@ async function handleGenerate() {
 
     // 调用生成 API
     const response = await axios.post(
-      `/apis/coverimage.lik.cc/v1alpha1/generate/${props.postName}`
+      `/apis/lyxyimage.994613.xyz/v1alpha1/generate/${props.postName}`
     );
 
     if (response.data.status === "generating") {
@@ -70,7 +70,7 @@ function startPolling() {
   pollingTimer = window.setInterval(async () => {
     try {
       const response = await axios.get(
-        `/apis/coverimage.lik.cc/v1alpha1/status/${props.postName}`
+        `/apis/lyxyimage.994613.xyz/v1alpha1/status/${props.postName}`
       );
 
       const data = response.data;
@@ -124,7 +124,7 @@ watch(() => props.visible, async (newVal) => {
   if (newVal && props.postName) {
     try {
       const response = await axios.get(
-        `/apis/coverimage.lik.cc/v1alpha1/status/${props.postName}`
+        `/apis/lyxyimage.994613.xyz/v1alpha1/status/${props.postName}`
       );
       if (response.data.status === "generating") {
         status.value = "generating";

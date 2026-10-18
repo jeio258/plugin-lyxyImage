@@ -4,22 +4,22 @@ apiVersion: plugin.halo.run/v1alpha1
 kind: Plugin
 metadata:
   # The name defines how the plugin is invoked, A unique name
-  name: coverImage
+  name: lyxyImage
 spec:
   enabled: true
-  requires: ">=2.22.1"
-  version: "1.1.0"
+  requires: ">=2.23.0"
+  version: "2.0.0"
   author:
-    name: Handsome
-    website: https://www.lik.cc/
+    name: 临渊羡鱼
+    website: https://blog.994613.xyz
   logo: logo.svg
-  homepage: https://github.com/acanyo/plugin-coverImage#readme
-  repo: https://github.com/acanyo/plugin-coverImage
-  issues: https://github.com/acanyo/plugin-coverImage/issues
-  settingName: plugin-coverImage-settings
-  configMapName: plugin-coverImage-configmap
+  homepage: https://blog.994613.xyz
+  repo: https://blog.994613.xyz
+  issues: https://blog.994613.xyz
+  settingName: plugin-lyxyImage-settings
+  configMapName: plugin-lyxyImage-configmap
   displayName: "封面图"
-  description: "为你的halo文章提供默认封面图功能"
+  description: "为 Halo 文章生成封面图：随机图 / 文章首图 / 自定义 SVG / OpenAI 兼容 AI 生成"
   license:
     - name: "GPL-3.0"
-      url: "https://github.com/acanyo/plugin-coverImage/blob/main/LICENSE"
+      url: "https://www.gnu.org/licenses/gpl-3.0.html"

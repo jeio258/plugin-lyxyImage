@@ -505,7 +505,7 @@ async function handleGenerate() {
     }, 1000);
 
     // 调用生成 API，带上 type 参数
-    let url = `/apis/coverimage.lik.cc/v1alpha1/generate/${postName.value}?type=${currentTab.value}`;
+    let url = `/apis/lyxyimage.994613.xyz/v1alpha1/generate/${postName.value}?type=${currentTab.value}`;
     if (currentTab.value === 'aiGenerated') {
       url += `&model=${aiModel.value}&size=${aiSize.value}&style=${aiStyle.value}&watermark=${watermark.value}`;
     }
@@ -571,7 +571,7 @@ async function setCoverToPost() {
     Toast.info("正在上传封面图...");
 
     // 调用上传接口
-    const response = await axios.post('/apis/coverimage.lik.cc/v1alpha1/upload', {
+    const response = await axios.post('/apis/lyxyimage.994613.xyz/v1alpha1/upload', {
       imageContent: imageUrl.value,
       postName: postName.value
     });

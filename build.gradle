@@ -1,17 +1,17 @@
 plugins {
     id 'java'
     id "io.freefair.lombok" version "8.13"
-    id "run.halo.plugin.devtools" version "0.6.2"
+    id "run.halo.plugin.devtools" version "0.8.0"
 }
 
-group 'cc.lik.coverImage'
+group 'cc.lyxy.image'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation platform('run.halo.tools.platform:plugin:2.22.0')
+    implementation platform('run.halo.tools.platform:plugin:2.25.0')
     compileOnly 'run.halo.app:api'
 
     testImplementation 'run.halo.app:api'
@@ -46,7 +46,7 @@ tasks.named('classes') {
 }
 
 halo {
-    version = '2.22.1'
+    version = '2.25.0'
     debug =  true
 }
 

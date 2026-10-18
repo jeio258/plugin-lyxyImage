@@ -3,6 +3,6 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
-rootProject.name = 'plugin-coverImage'
+rootProject.name = 'plugin-lyxyImage'
 
 include 'ui'

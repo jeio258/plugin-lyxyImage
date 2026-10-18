@@ -1,7 +1,7 @@
 apiVersion: v1alpha1
 kind: AnnotationSetting
 metadata:
-  name: coverImage-annotation-setting
+  name: lyxyImage-annotation-setting
 spec:
   targetRef:
     group: content.halo.run

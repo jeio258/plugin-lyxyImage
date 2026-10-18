@@ -58,7 +58,7 @@ async function handleGenerate() {
 
     // 调用生成 API，带上 type 参数
     const response = await axios.post(
-      `/apis/coverimage.lik.cc/v1alpha1/generate/${props.postName}?type=${currentTab.value}`
+      `/apis/lyxyimage.994613.xyz/v1alpha1/generate/${props.postName}?type=${currentTab.value}`
     );
 
     if (response.data.status === "generating") {
@@ -80,7 +80,7 @@ function startPolling() {
   pollingTimer = window.setInterval(async () => {
     try {
       const response = await axios.get(
-        `/apis/coverimage.lik.cc/v1alpha1/status/${props.postName}`
+        `/apis/lyxyimage.994613.xyz/v1alpha1/status/${props.postName}`
       );
 
       const data = response.data;
@@ -149,7 +149,7 @@ watch(() => props.visible, async (newVal) => {
     // 检查是否有正在进行的任务
     try {
       const response = await axios.get(
-        `/apis/coverimage.lik.cc/v1alpha1/status/${props.postName}`
+        `/apis/lyxyimage.994613.xyz/v1alpha1/status/${props.postName}`
       );
       if (response.data.status === "generating") {
         status.value = "generating";
