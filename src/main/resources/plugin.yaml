@@ -13,9 +13,9 @@ spec:
     name: 临渊羡鱼
     website: https://blog.994613.xyz
   logo: logo.svg
-  homepage: https://blog.994613.xyz
-  repo: https://blog.994613.xyz
-  issues: https://blog.994613.xyz
+  homepage: https://github.com/jeio258/plugin-lyxyImage#readme
+  repo: https://github.com/jeio258/plugin-lyxyImage
+  issues: https://github.com/jeio258/plugin-lyxyImage/issues
   settingName: plugin-lyxyImage-settings
   configMapName: plugin-lyxyImage-configmap
   displayName: "封面图"
